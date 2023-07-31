@@ -1,9 +1,10 @@
 "use client";
 
 import AnimatedImage from "./components/AnimatedImage";
-import AnimatedText from "./components/AnimatedText";
+import logo from "../../public/bgfundo.jpeg"
 import Layout from "./components/Layoyt";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const image = {
   initial: {
@@ -59,6 +60,7 @@ export default function Home() {
           Entre em Contato
         </motion.a>
       </Layout>
+      <Image src={logo} alt="logo" className="opacity-10 -z-10  absolute cover"/>
     </div>
   );
 }
