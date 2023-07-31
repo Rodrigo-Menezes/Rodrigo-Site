@@ -21,7 +21,7 @@ const image = {
 
 export default function Home() {
   return (
-    <div className=" flex flex-col justify-center items-center w-full min-h-screen">
+    <div className=" flex flex-col justify-center items-center w-full">
       <Layout className=" flex flex-col justify-center items-center pt-0 pb-0">
         {/*  <AnimatedText
           className="text-light/60 text-xl flex justify-start font-light w-96"
@@ -43,17 +43,14 @@ export default function Home() {
           className="text-light/60 text-xl flex tracking-widest justify-center font-light w-96"
           text="React / Next"
         /> */}
-        <AnimatedImage className="drop-shadow-dark bg-red-600" />
-        <AnimatedText
-          className="!w-[645px]  text-lg pt-10 text-light/75"
-          text="Descubra a magia do desenvolvimento web com React.js e Next.js: Experiências de usuário incríveis e desempenho imbatível, tudo em uma só plataforma!"
-          targetColor="text-p"
-          targetWord=""
-        />
+    
+  
+        <AnimatedImage className="drop-shadow-dark absolute" />
+       
         <motion.a id="link" href="#"
-         variants={image}
-         initial="initial"
-         animate="animate"
+          variants={image}
+          initial="initial"
+          animate="animate"
         >
           <span id="spa"></span>
           <span id="spa"></span>

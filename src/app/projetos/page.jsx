@@ -6,7 +6,7 @@ import Carrossel from "../components/carrossel";
 export default function Projetos() {
     return (
         <div>
-            <AnimatedText text="Projetos" className="py-24 text-7xl" />
+            <AnimatedText text="Transformando ideias em realidade." className=" py-5 px-32 text-3xl" />
             <Carrossel />
         </div>
     )

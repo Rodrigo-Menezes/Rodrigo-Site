@@ -20,7 +20,7 @@ const CustomLink = ({ href, title, className = "" }) => {
 };
 export default function NavBar() {
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between fixed">
+    <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
       <div className="w-full flex justify-between items-center lg:hidden">
         <div className="w-28">
           <h1 className="text-light font-bold text-3xl">RM</h1>
