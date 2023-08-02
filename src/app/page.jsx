@@ -1,10 +1,10 @@
 "use client";
 
 import AnimatedImage from "./components/AnimatedImage";
-import logo from "../../public/bgfundo.jpeg"
+
 import Layout from "./components/Layoyt";
 import { motion } from "framer-motion";
-import Image from "next/image";
+
 
 const image = {
   initial: {
@@ -15,8 +15,10 @@ const image = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 1,
+      duration: 1, 
+      delay:0.5,  
     },
+    delay:2,
   },
 };
 
@@ -48,7 +50,7 @@ export default function Home() {
   
         <AnimatedImage className="drop-shadow-dark absolute" />
        
-        <motion.a id="link" href="#"
+        <motion.a id="link" href="#" className="shadow-lg shadow-black"
           variants={image}
           initial="initial"
           animate="animate"
@@ -60,7 +62,7 @@ export default function Home() {
           Entre em Contato
         </motion.a>
       </Layout>
-      <Image src={logo} alt="logo" className="opacity-10 -z-10  absolute cover"/>
+      
     </div>
   );
 }
