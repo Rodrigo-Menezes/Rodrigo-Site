@@ -5,7 +5,7 @@ const quote = {
   initial: {
     opacity: 1,
   },
-  animate: {
+  whileInView: {
     opacity: 1,
     transition: {
       delay: 1,
@@ -18,7 +18,7 @@ const singleWord = {
     opacity: 0,
     y:50
   },
-  animate: {
+  whileInView: {
     opacity: 1,
     y: 0,
     transition: {
@@ -39,7 +39,7 @@ export default function AnimatedText({
         className={`inline-block w-full text-light  font-black capitalize text-8xl ${className}`}
         variants={quote}
         initial="initial"
-        animate="animate"
+        whileInView="whileInView"
       >
         {text.split(" ").map((word, index) => (
           <motion.span
