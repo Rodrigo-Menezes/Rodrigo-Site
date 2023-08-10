@@ -20,7 +20,7 @@ const image = {
 export default function AnimatedImage() {
   return (
     <motion.div
-      className="w-[90%] drop-shadow-dark"
+      className="w-[80%] md:w-full drop-shadow-dark"
       variants={image}
       initial="initial"
       animate="animate"

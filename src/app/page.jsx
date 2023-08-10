@@ -25,14 +25,15 @@ const image = {
 
 export default function Home() {
   return (
-    <div className=" flex flex-col justify-center items-center w-full p-1 pt-44 sm:pt-10 ">
+    <div className=" flex flex-col justify-center items-center w-full p-1 pt-44 dm:pt-10 ">
       <TransitionEffect />
       <div className=" flex flex-col justify-center items-center">
         <AnimatedImage className="drop-shadow-dark absolute" />
-        <AnimatedText className="text-white pt-10 text-center font-bold md:text-sm md:my-10">
-          Maximize suas vendas com nossa landing page de alta conversão.
-          Destaque-se e conquiste clientes agora!
-        </AnimatedText>
+        <AnimatedText className="text-white pt-10 text-center font-bold text-xl md:text-sm md:my-10"
+        text="Maximize suas vendas com nossa landing page de alta conversão.
+        Destaque-se e conquiste clientes agora!"
+        />
+          
 
         <motion.a
           href="#"
