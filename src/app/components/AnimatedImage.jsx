@@ -20,12 +20,12 @@ const image = {
 export default function AnimatedImage() {
   return (
     <motion.div
-      className="w-[50%] drop-shadow-dark"
+      className="w-[90%] drop-shadow-dark"
       variants={image}
       initial="initial"
       animate="animate"
     >
-      <Image src={logo} className="w-full" alt="imagem de uma mulher"
+      <Image src={logo} className="w-full" alt="Logo da pagina RM desenvolvedor web"
         priority
         sizes="(max-width:768px) 100vw,(max-width:1200px)50vw,50vw"
       />

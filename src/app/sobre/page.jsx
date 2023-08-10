@@ -7,10 +7,10 @@ import TransitionEffect from "../components/TransitionEffect";
 
 export default function Sobre() {
   return (
-    <div className="px-36 h-full pb-10">
+    <div className="px-36 h-full pb-10 pt-44">
       <TransitionEffect/>
       <div className="flex items-start">
-        <Layout className="text-light !w-1/2 bg-light/5 shadow-lg shadow-black rounded-xl !p-4 mx-8">
+        <Layout className="text-light !w-1/2 bg-light/5 shadow-lg shadow-black rounded !p-4 mx-8">
           <h2 className="mb-4 text-lg font-bold uppercase text-light drop-shadow-dark ">Biografia</h2>
           <p className="font-medium text-light drop-shadow-dark"> Meu nome é <samp className="font-black text-primary">Rodrigo Menezes</samp> e sou natural de São Lourenço, Minas Gerais. Desde cedo, minha paixão por tecnologia me impulsionou a seguir uma carreira no mundo do desenvolvimento. Como desenvolvedor frontend, sou especializado em ReactJS e NextJS, duas tecnologias que me encantam pelas possibilidades que oferecem.</p><br />
 
@@ -20,7 +20,7 @@ export default function Sobre() {
 
           <p className="font-medium text-light drop-shadow-dark">Ser um desenvolvedor frontend me permite unir minha paixão pela tecnologia com a criatividade, e é algo que me faz sentir realizado. Estou animado para continuar trilhando meu caminho nessa área e contribuir para o desenvolvimento de projetos que tenham um impacto positivo na vida das pessoas.</p><br />
         </Layout>
-        <Image src={logo} alt="Minha foto de perfil" className="w-1/2 border rounded-xl border-light mr-8 p-5" />
+        <Image src={logo} alt="Minha foto de perfil" className="w-1/2 border rounded border-light mr-8 p-5" />
       </div>
       <Tecnologias />
     </div>

@@ -5,7 +5,7 @@ import Carrossel from "../components/carrossel";
 
 export default function Projetos() {
     return (
-        <div>
+        <div className="flex justify-center items-center h-screen">
            <TransitionEffect/>
             <Carrossel />
         </div>

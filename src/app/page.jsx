@@ -27,14 +27,14 @@ const image = {
 
 export default function Home() {
   return (
-    <div className=" flex flex-col justify-center items-center w-full">
+    <div className=" flex flex-col justify-center items-center w-full p-10 pt-44 sm:pt-10 ">
 
    <TransitionEffect/>
-      <Layout className=" flex flex-col justify-center items-center pt-0 pb-0">
-
+      <div className="!p-0 md:p-32 flex flex-col justify-center items-center">
         <AnimatedImage className="drop-shadow-dark absolute" />
+        <p className="text-white pt-10 font-bold">Maximize suas vendas com nossa landing page de alta conversão. Destaque-se e conquiste clientes agora!</p>
 
-        <motion.a id="link" href="#" className="shadow-lg shadow-black"
+        <motion.a id="link" href="#" className="bg-light/5 shadow-lg shadow-black "
           variants={image}
           initial="initial"
           animate="animate"
@@ -45,7 +45,7 @@ export default function Home() {
           <span id="spa"></span>
           Entre em Contato
         </motion.a>
-      </Layout>
+      </div>
 
     </div>
   );
