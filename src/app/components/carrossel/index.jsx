@@ -44,7 +44,7 @@ export default function Carrossel() {
         }}
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
-        className="mySwiper !w-[1000px] h-auto flex justify-center items-center rounded-xl py-10 "
+        className="mySwiper !w-[1000px] h-auto flex justify-center items-center rounded py-10 "
         style={{
           // Adicione o estilo inline para alterar a cor da bolinha de paginação
           "--swiper-pagination-color": "#ff0048", // Troque "red" pela cor que você deseja
@@ -53,9 +53,9 @@ export default function Carrossel() {
         <SwiperSlide className="pb-10 !flex flex-col !justify-center !items-center">
           <img
             src="https://swiperjs.com/demos/images/nature-1.jpg"
-            className="w-full rounded-xl"
+            className="w-full rounded"
           />
-          <div className="bg-dark/30 flex flex-col justify-center items-center absolute bottom-10 pb-2">
+          <div className="bg-light/20 backdrop-blur-md rounded flex flex-col justify-center items-center absolute bottom-10 pb-2">
             <p className="text-center text-light text-sm p-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
               eum voluptatem sapiente veniam rerum aspernatur.{" "}
@@ -80,9 +80,9 @@ export default function Carrossel() {
         <SwiperSlide className="pb-10 !flex flex-col !justify-center !items-center">
           <img
             src="https://swiperjs.com/demos/images/nature-1.jpg"
-            className="w-full rounded-xl"
+            className="w-full rounded"
           />
-          <div className="bg-dark/30 flex flex-col justify-center items-center absolute bottom-10 pb-2">
+          <div className="bg-light/20 backdrop-blur-md rounded flex flex-col justify-center items-center absolute bottom-10 pb-2">
             <p className="text-center text-light text-sm p-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
               eum voluptatem sapiente veniam rerum aspernatur.{" "}
@@ -106,9 +106,9 @@ export default function Carrossel() {
         <SwiperSlide className="pb-10 !flex flex-col !justify-center !items-center">
           <img
             src="https://swiperjs.com/demos/images/nature-1.jpg"
-            className="w-full rounded-xl"
+            className="w-full rounded"
           />
-          <div className="bg-dark/30 flex flex-col justify-center items-center absolute bottom-10 pb-2">
+          <div className="bg-light/20 backdrop-blur-md rounded flex flex-col justify-center items-center absolute bottom-10 pb-2">
             <p className="text-center text-light text-sm p-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
               eum voluptatem sapiente veniam rerum aspernatur.{" "}
@@ -132,9 +132,9 @@ export default function Carrossel() {
         <SwiperSlide className="pb-10 !flex flex-col !justify-center !items-center">
           <img
             src="https://swiperjs.com/demos/images/nature-1.jpg"
-            className="w-full rounded-xl"
+            className="w-full rounded"
           />
-          <div className="bg-dark/30 flex flex-col justify-center items-center absolute bottom-10 pb-2">
+          <div className="bg-light/20 backdrop-blur-md rounded flex flex-col justify-center items-center absolute bottom-10 pb-2">
             <p className="text-center text-light text-sm p-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
               eum voluptatem sapiente veniam rerum aspernatur.{" "}
@@ -158,9 +158,9 @@ export default function Carrossel() {
         <SwiperSlide className="pb-10 !flex flex-col !justify-center !items-center">
           <img
             src="https://swiperjs.com/demos/images/nature-1.jpg"
-            className="w-full rounded-xl"
+            className="w-full rounded"
           />
-          <div className="bg-dark/30 flex flex-col justify-center items-center absolute bottom-10 pb-2">
+          <div className="bg-light/20 backdrop-blur-md rounded-lg flex flex-col justify-center items-center absolute bottom-10 pb-2">
             <p className="text-center text-light text-sm p-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
               eum voluptatem sapiente veniam rerum aspernatur.{" "}
