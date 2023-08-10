@@ -25,7 +25,7 @@ const image = {
 
 export default function Home() {
   return (
-    <div className=" flex flex-col justify-center items-center w-full p-1 pt-44 dm:pt-10 ">
+    <div className=" flex flex-col justify-center items-center w-full md:p-4 pt-44 md:pt-10 ">
       <TransitionEffect />
       <div className=" flex flex-col justify-center items-center">
         <AnimatedImage className="drop-shadow-dark absolute" />
