@@ -1,8 +1,6 @@
 "use client";
 
 import AnimatedImage from "./components/AnimatedImage";
-
-import Layout from "./components/Layoyt";
 import { motion } from "framer-motion";
 import TransitionEffect from "../app/components/TransitionEffect";
 import AnimatedText from "./components/AnimatedText";
@@ -27,7 +25,7 @@ export default function Home() {
   return (
     <div className=" flex flex-col justify-center items-center w-full md:p-4 pt-44 md:pt-10 ">
       <TransitionEffect />
-      <div className=" flex flex-col justify-center items-center">
+      <div className=" flex flex-col justify-center items-center px-32 md:px-0">
 
         <AnimatedImage className="drop-shadow-dark absolute" />
 

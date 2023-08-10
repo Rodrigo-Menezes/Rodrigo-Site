@@ -3,6 +3,8 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { faGithub, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const CustomLink = ({ href, title, className = "" }) => {
   const pathname = usePathname();
@@ -31,12 +33,12 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
   return (
     <button
       href={href}
-      className={`${className} group relative text-dark`}
+      className={`${className} group relative text-light mb-5`}
       onClick={handleClick}
     >
       {title}
       <span
-        className={`h-px inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
+        className={`h-px inline-block bg-primary absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
           pathname === href ? "w-full" : "w-0"
         }`}
       >
@@ -107,7 +109,7 @@ export default function NavBar() {
 
       </div>
       {isOpen ? (
-        <div className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32">
+        <div className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-light/10 rounded-lg backdrop-blur-md py-32">
           <nav className="flex flex-col items-center justify-center">
             <CustomMobileLink
               href="/"
@@ -127,6 +129,11 @@ export default function NavBar() {
               className=""
               toggle={handleClick}
             />
+          </nav>
+          <nav className="flex items-center justify-center gap-2">
+            <Link href='#'><FontAwesomeIcon icon={faInstagram} className="text-primary h-7"/></Link>
+            <Link href='#'><FontAwesomeIcon icon={faGithub} className="text-primary h-7"/></Link>
+            <Link href='#'><FontAwesomeIcon icon={faLinkedin} className="text-primary h-7"/></Link>
           </nav>
         </div>
       ) : null}

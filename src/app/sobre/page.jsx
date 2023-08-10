@@ -7,7 +7,7 @@ import TransitionEffect from "../components/TransitionEffect";
 
 export default function Sobre() {
   return (
-    <div className="px-36 h-full pb-10 pt-44">
+    <div className="px-48 h-full pb-10 pt-44">
       <TransitionEffect/>
       <div className="flex items-start">
         <Layout className="text-light !w-1/2 bg-light/5 shadow-lg shadow-black rounded !p-4 mx-8">
@@ -22,6 +22,7 @@ export default function Sobre() {
         </Layout>
         <Image src={logo} alt="Minha foto de perfil" className="w-1/2 border rounded border-light mr-8 p-5" />
       </div>
+      
       <Tecnologias />
     </div>
   )
