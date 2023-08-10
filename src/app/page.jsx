@@ -5,6 +5,7 @@ import AnimatedImage from "./components/AnimatedImage";
 import Layout from "./components/Layoyt";
 import { motion } from "framer-motion";
 import TransitionEffect from "../app/components/TransitionEffect";
+import AnimatedText from "./components/AnimatedText";
 
 const image = {
   initial: {
@@ -28,10 +29,10 @@ export default function Home() {
       <TransitionEffect />
       <div className=" flex flex-col justify-center items-center">
         <AnimatedImage className="drop-shadow-dark absolute" />
-        <p className="text-white pt-10 text-center font-bold md:text-sm md:my-10">
+        <AnimatedText className="text-white pt-10 text-center font-bold md:text-sm md:my-10">
           Maximize suas vendas com nossa landing page de alta conversão.
           Destaque-se e conquiste clientes agora!
-        </p>
+        </AnimatedText>
 
         <motion.a
           href="#"
