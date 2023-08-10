@@ -88,7 +88,7 @@ export default function NavBar() {
             }`}
           ></span>
           <span
-            className={`bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
+            className={`bg-primary block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
               isOpen ? "opacity-0" : "opacity-100"
             }`}
           ></span>
@@ -98,6 +98,7 @@ export default function NavBar() {
             }`}
           ></span>
         </button>
+
         <div className="hidden md:block">
           <h1 className="text-light font-bold text-xl">RM</h1>
 
