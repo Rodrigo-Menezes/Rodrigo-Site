@@ -53,22 +53,6 @@ export default function ItensPagina() {
           </Link>
         </motion.a>
       </div>
-      <motion.a
-        href="#"
-        initial={{ x: 100}}
-        whileInView={{
-          x:0,
-          transition: {
-            delay: 2,
-          },
-        }
-        }
-       
-
-        className="bg-primary text-light hover:text-primary hover:bg-light transition-all duration-300 font-bold fixed right-0 bottom-[50%] p-5 "
-      >
-        R i x x e r
-      </motion.a>
     </div>
   );
 }

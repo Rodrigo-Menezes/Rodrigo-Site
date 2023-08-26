@@ -23,7 +23,7 @@ const image = {
 
 export default function Home() {
   return (
-    <div className=" flex flex-col justify-center items-center w-full md:p-4 pt-44 md:pt-10 ">
+    <div className=" flex flex-col justify-center items-center w-full md:p-4 md:pt-10 h-screen">
       <TransitionEffect />
       <div className=" flex flex-col justify-center items-center px-32 md:px-0">
 

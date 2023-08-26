@@ -12,7 +12,6 @@ module.exports = {
         light: "#DDDDDD",
         primary: "#ff0048", // 240,86,199
         primaryDark: "#58E6D9", // 80,230,217
-        gradiente:"linear-gradient(90deg, rgba(246,200,92,1) 0%, rgba(243,45,30,1) 35%, rgba(53,15,80,1) 60%, rgba(18,230,208,1) 91%)"
     },
     
     backgroundImage: {

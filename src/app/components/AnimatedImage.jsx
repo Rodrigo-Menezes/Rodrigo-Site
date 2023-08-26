@@ -25,7 +25,7 @@ export default function AnimatedImage() {
       initial="initial"
       animate="animate"
     >
-      <Image src={logo} className="w-full" alt="Logo da pagina RM desenvolvedor web"
+      <Image src={logo} className="w-" alt="Logo da pagina RM desenvolvedor web"
         priority
         sizes="(max-width:768px) 100vw,(max-width:1200px)50vw,50vw"
       />
