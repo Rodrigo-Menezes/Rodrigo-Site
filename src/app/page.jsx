@@ -29,7 +29,7 @@ export default function Home() {
 
         <AnimatedImage className="drop-shadow-dark absolute" />
 
-        <AnimatedText className="text-white text-center font-bold text-xl md:text-sm md:my-10 w-[500px]"
+        <AnimatedText className="text-white text-center font-bold text-xl md:text-sm md:my-10"
         text="Maximize suas vendas com nossa landing page de alta conversão.
         Destaque-se e conquiste clientes agora!"
         />
