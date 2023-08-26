@@ -34,7 +34,7 @@ export default function AnimatedText({
   targetColor,
 }) {
   return (
-    <div className="w-[500px] mx-auto py-2 flex items-center justify-center text-center overflow-hidden">
+    <div className=" mx-auto py-2 flex items-center justify-center text-center overflow-hidden">
       <motion.h1
         className={`inline-block w-full text-light  font-black capitalize text-8xl ${className}`}
         variants={quote}
