@@ -45,7 +45,8 @@ module.exports = {
     
     
     dropShadow: {
-        "dark": "0.10rem 0.10rem 0.0rem rgba(0, 0, 0, 0.5)",
+        "dark": "0.10rem 0.10rem .0rem rgba(0, 0, 0, 0.5)",
+        "dark1": "1.0rem 0.10rem .1rem rgba(0, 0, 0, 0.5)",
     },
     
     

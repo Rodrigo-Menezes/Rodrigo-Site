@@ -56,7 +56,11 @@ export default function NavBar() {
   return (
     <header className="relative -mt-10">
       {/* menu web */}
-      <div className="w-full px-10 py-20 font-medium flex items-center justify-between absolute">
+      <motion.div
+        initial={{ opacity: 0, y: 110 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 1 }}
+        className="w-full px-10 py-20 font-medium flex items-center justify-between absolute">
         <Link
           href="/"
           className="w-full md:flex justify-between items-center hidden "
@@ -72,7 +76,7 @@ export default function NavBar() {
             <CustomLink href="/projetos" title="Projetos" className="mx-4 p-2" />
           </nav>
         </Link>
-      </div>
+      </motion.div>
 
       {/* menu mobile */}
       <div className="flex justify-between items-center px-10 py-5">
