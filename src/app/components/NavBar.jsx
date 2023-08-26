@@ -56,9 +56,9 @@ export default function NavBar() {
   };
 
   return (
-    <header>
+    <header className="relative -mt-10">
       {/* menu web */}
-      <div className="w-full px-32 py-8 font-medium flex items-center justify-between absolute">
+      <div className="w-full px-32 py-20 font-medium flex items-center justify-between absolute">
         <Link
           href="/"
           className="w-full flex justify-between items-center lg:hidden"
