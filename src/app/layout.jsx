@@ -19,7 +19,6 @@ export default function RootLayout({ children }) {
      
      <NavBar/>
       <ItensPagina/>
-      
       {children}
       </body>
     </html>
