@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Card = ({ text, title, className }) => {
   return (
     <motion.div
-      className={`mx-5 bg-light/5 rounded p-5 text-light w-full h-auto mt-10 shadow-md shadow-black ${className}`}
+      className={`bg-light/5 rounded p-5 text-light w-full h-auto mt-10 shadow-md shadow-black ${className}`}
       initial={{
         opacity: 1,
         y: 50,
@@ -27,7 +27,7 @@ const Card = ({ text, title, className }) => {
 
 export default function Tecnologias() {
   return (
-    <div className="pt-28 px-10">
+    <div className="pt-28">
       <AnimatedText text="Tecnologias que utilizo" className="w-[700px]"/>
       <div className="flex flex-wrap justify-center items-center">
         <Card

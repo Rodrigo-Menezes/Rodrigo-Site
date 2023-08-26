@@ -44,7 +44,7 @@ export default function Carrossel() {
         }}
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
-        className="mySwiper !w-[1000px] h-auto flex justify-center items-center rounded py-10 "
+        className="mySwiper !w-[800px] h-auto flex justify-center items-center rounded mt-20"
         style={{
           // Adicione o estilo inline para alterar a cor da bolinha de paginação
           "--swiper-pagination-color": "#ff0048", // Troque "red" pela cor que você deseja

@@ -3,19 +3,18 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { faGithub, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const CustomLink = ({ href, title, className = "" }) => {
   const pathname = usePathname();
 
   return (
-    <Link href={href} className={`${className} group relative text-light `}>
+    <Link href={href} className={`${className} group relative text-light`}>
       {title}
       <span
-        className={`h-px inline-block bg-primary absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
-          pathname === href ? "w-full" : "w-0"
-        }`}
+        className={`h-px inline-block bg-primary absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${pathname === href ? "w-full" : "w-0"
+          }`}
       >
         &nbsp;
       </span>
@@ -31,20 +30,19 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
     router.push(href);
   };
   return (
-    <button
+    <Link
       href={href}
       className={`${className} group relative text-light mb-5`}
       onClick={handleClick}
     >
       {title}
       <span
-        className={`h-px inline-block bg-primary absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
-          pathname === href ? "w-full" : "w-0"
-        }`}
+        className={`h-px inline-block bg-primary absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${pathname === href ? "w-full" : "w-0"
+          }`}
       >
         &nbsp;
       </span>
-    </button>
+    </Link>
   );
 };
 
@@ -58,10 +56,10 @@ export default function NavBar() {
   return (
     <header className="relative -mt-10">
       {/* menu web */}
-      <div className="w-full px-32 py-20 font-medium flex items-center justify-between absolute">
+      <div className="w-full px-10 py-20 font-medium flex items-center justify-between absolute">
         <Link
           href="/"
-          className="w-full flex justify-between items-center lg:hidden"
+          className="w-full md:flex justify-between items-center hidden "
         >
           <div className="w-28">
             <h1 className="text-light font-bold text-3xl">RM</h1>
@@ -69,39 +67,36 @@ export default function NavBar() {
             <h2 className="text-primary text-3xl font-bold">Dev</h2>
           </div>
           <nav>
-            <CustomLink href="/" title="Início" className="mr-4" />
-            <CustomLink href="/sobre" title="Sobre" className="mx-4" />
-            <CustomLink href="/projetos" title="Projetos" className="mx-4" />
+            <CustomLink href="/" title="Início" className="mr-4 p-2" />
+            <CustomLink href="/sobre" title="Sobre" className="mx-4 p-2" />
+            <CustomLink href="/projetos" title="Projetos" className="mx-4 p-2" />
           </nav>
         </Link>
       </div>
 
       {/* menu mobile */}
       <div className="flex justify-between items-center px-10 py-5">
-        
+
         <button
-          className="flex-col justify-center items-center hidden lg:flex"
+          className="flex-col justify-center items-center flex  md:hidden"
           aria-label="botão de menu"
           onClick={handleClick}
         >
           <span
-            className={`bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
-              isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
-            }`}
+            className={`bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
+              }`}
           ></span>
           <span
-            className={`bg-primary block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
-              isOpen ? "opacity-0" : "opacity-100"
-            }`}
+            className={`bg-primary block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? "opacity-0" : "opacity-100"
+              }`}
           ></span>
           <span
-            className={`bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
-              isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
-            }`}
+            className={`bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
+              }`}
           ></span>
         </button>
 
-        <div className="hidden md:block">
+        <div className="md:hidden block">
           <h1 className="text-light font-bold text-xl">RM</h1>
 
           <h2 className="text-primary text-xl font-bold">Dev</h2>
@@ -131,9 +126,9 @@ export default function NavBar() {
             />
           </nav>
           <nav className="flex items-center justify-center gap-2">
-            <Link href='#'><FontAwesomeIcon icon={faInstagram} className="text-primary h-7"/></Link>
-            <Link href='#'><FontAwesomeIcon icon={faGithub} className="text-primary h-7"/></Link>
-            <Link href='#'><FontAwesomeIcon icon={faLinkedin} className="text-primary h-7"/></Link>
+            <Link href='#'><FontAwesomeIcon icon={faInstagram} className="text-primary h-7" /></Link>
+            <Link href='#'><FontAwesomeIcon icon={faGithub} className="text-primary h-7" /></Link>
+            <Link href='#'><FontAwesomeIcon icon={faLinkedin} className="text-primary h-7" /></Link>
           </nav>
         </div>
       ) : null}
