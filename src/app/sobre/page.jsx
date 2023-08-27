@@ -25,7 +25,8 @@ export default function Sobre() {
           <div className="w-44 h-44 flex justify-center items-center  rotate-45 gap-1 bg-primary rounded-full drop-shadow-dark1">
             <div className="space-y-1 flex flex-col justify-center items-end -ml-10 -mt-10">
               <div className="bg-dark flex justify-center items-center w-56 h-56   rounded">
-                <Image src={h} alt="Minha foto de perfil" className="w-96 h-56 rounded border-4 border-solid border-dark" />
+                <Image src={h} alt="Minha foto de perfil" className="w-96 h-56 rounded border-4 border-solid border-dark"
+                sizes="(max-width:768px) 100vw,(max-width:1200px)50vw,50vw" />
               </div>
               <div className="bg-dark flex justify-center items-center w-44 h-44 rounded p-5  ">
                 <Image src={logo} alt="Minha foto de perfil" className="-rotate-45" />
