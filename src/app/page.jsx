@@ -49,7 +49,8 @@ export default function Home() {
         </motion.a>
       </div>
       <div className=" w-1/2 h-screen -mt-10 ">
-        <Image src={cara} alt="Foto de perfil de Rodrigo Menezes" className="opacity-70 absolute -z-10 right-0 w-1/2 h-screen drop-shadow-dark2"/>
+        <Image src={cara} alt="Foto de perfil de Rodrigo Menezes" className="opacity-70 absolute -z-10 right-0 w-1/2 h-screen drop-shadow-dark2"
+        sizes="(max-width:768px) 100vw,(max-width:1200px)50vw,50vw"/>
       </div>
     </div>
   );
