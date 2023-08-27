@@ -16,11 +16,11 @@ const quote = {
 const singleWord = {
   initial: {
     opacity: 0,
-    x:50
+    y:50
   },
   whileInView: {
     opacity: 1,
-    x: 0,
+    y: 0,
     transition: {
       duration: 1,
     },
