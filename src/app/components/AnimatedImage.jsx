@@ -13,7 +13,6 @@ const image = {
     x: 0,
     transition: {
       duration: 1,
-      delay: 5
     },
   },
 };

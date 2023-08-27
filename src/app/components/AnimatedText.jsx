@@ -24,6 +24,7 @@ const singleWord = {
     transition: {
       duration: 1,
     },
+    delay:2
   },
 };
 
