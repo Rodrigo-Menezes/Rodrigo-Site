@@ -36,7 +36,7 @@ export default function AnimatedText({
   return (
     <div className=" mx-auto py-2 flex items-center justify-center text-center overflow-hidden">
       <motion.h1
-        className={`inline-block w-[500px] text-light  font-black capitalize text-8xl ${className}`}
+        className={`inline-block w-[300px] text-light  font-black capitalize text-8xl ${className}`}
         variants={quote}
         initial="initial"
         whileInView="whileInView"

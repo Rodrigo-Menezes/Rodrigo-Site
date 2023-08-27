@@ -32,7 +32,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
   return (
     <Link
       href={href}
-      className={`${className} group relative text-light mb-5`}
+      className={`${className} group relative text-light mb-5 `}
       onClick={handleClick}
     >
       {title}
@@ -54,13 +54,13 @@ export default function NavBar() {
   };
 
   return (
-    <header className="relative -mt-10">
+    <header className="relative">
       {/* menu web */}
       <motion.div
         initial={{ opacity: 0, y: 110 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1 }}
-        className="w-full px-10 py-20 font-medium flex items-center justify-between absolute">
+        className="w-full px-10 pt-20 font-medium flex items-center justify-between absolute">
         <Link
           href="/"
           className="w-full md:flex justify-between items-center hidden "
@@ -71,9 +71,9 @@ export default function NavBar() {
             <h2 className="text-primary text-3xl font-bold">Dev</h2>
           </div>
           <nav>
-            <CustomLink href="/" title="Início" className="mr-4 p-2" />
-            <CustomLink href="/sobre" title="Sobre" className="mx-4 p-2" />
-            <CustomLink href="/projetos" title="Projetos" className="mx-4 p-2" />
+            <CustomLink href="/" title="Início" className="mr-4 p-2 drop-shadow-dark text-xl" />
+            <CustomLink href="/sobre" title="Sobre" className="mx-4 p-2 drop-shadow-dark text-xl" />
+            <CustomLink href="/projetos" title="Projetos" className="mx-4 p-2 drop-shadow-dark text-xl" />
           </nav>
         </Link>
       </motion.div>

@@ -4,7 +4,8 @@ import AnimatedImage from "./components/AnimatedImage";
 import { motion } from "framer-motion";
 import TransitionEffect from "../app/components/TransitionEffect";
 import AnimatedText from "./components/AnimatedText";
-
+import Image from "next/image";
+import cara from "../../public/h.jpg"
 const image = {
   initial: {
     opacity: 0,
@@ -15,7 +16,6 @@ const image = {
     y: 0,
     transition: {
       duration: 1,
-      delay: 0.5,
     },
     delay: 2,
   },
@@ -23,13 +23,13 @@ const image = {
 
 export default function Home() {
   return (
-    <div className=" flex  justify-center items-center w-full md:p-4 md:pt-10 h-screen">
-      <TransitionEffect />
-      <div className="flex flex-col justify-center items-center px-32 md:px-0">
+    <div className="flex justify-center items-center w-full md:p- md:pt-10 h-screen">
+      
+      <div className="flex flex-col justify-center items-center">
         <AnimatedImage className="drop-shadow-dark absolute" />
 
         <AnimatedText className="text-white text-center font-bold text-xl md:text-sm md:my-10"
-        text="Maximize suas vendas com nossa landing page de alta conversão.
+          text="Maximize suas vendas com nossa landing page de alta conversão.
         Destaque-se e conquiste clientes agora!"
         />
 
@@ -47,6 +47,9 @@ export default function Home() {
             Entre em contato
           </span>
         </motion.a>
+      </div>
+      <div className=" w-1/2 h-screen -mt-10 ">
+        <Image src={cara} alt="Foto de perfil de Rodrigo Menezes" className="opacity-70 absolute -z-10 right-0 w-1/2 h-screen drop-shadow-dark2"/>
       </div>
     </div>
   );
