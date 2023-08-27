@@ -6,14 +6,13 @@ import { motion } from "framer-motion";
 const image = {
   initial: {
     opacity: 0,
-    x: 100,
+    y: 100,
   },
   animate: {
     opacity: 1,
-    x: 0,
+    y: 0,
     transition: {
-      duration: 1,
-      delay:2
+      duration: 2,
     },
   },
 };
