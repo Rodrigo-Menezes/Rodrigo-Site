@@ -65,7 +65,7 @@ Basicamente, o JavaScript permite que você torne seu site mais do que apenas um
         </div>
         <div className="md:w-1/2">
           
-          <AnimatedText text="Backend" className="w-full mt-10 text-2xl md:text-4xl" />
+          <AnimatedText text="Backend" className="w-full mt-10 !text-2xl !md:text-4xl" />
           <Card
             title="Go"
             text="Go, também conhecida como Golang, é uma linguagem de programação de código aberto desenvolvida pelo Google. Ela é conhecida por sua eficiência, simplicidade e desempenho, sendo frequentemente usada para criar software de sistemas e aplicativos de alto desempenho, especialmente em ambientes de servidores e computação distribuída. Go é projetada para ser rápida na compilação e execução, com suporte embutido para concorrência e gerenciamento de memória, tornando-a uma escolha popular para desenvolvedores que buscam eficiência e facilidade de uso."
