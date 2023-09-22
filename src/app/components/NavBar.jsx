@@ -61,7 +61,7 @@ export default function NavBar() {
         initial={{ opacity: 0, y: 110 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1 }}
-        className="w-full px-10 pt-20 font-medium flex items-center justify-between absolute">
+        className="w-full px-10 pt-5 font-medium flex items-center justify-between absolute">
         <Link
           href="/"
           className="w-full md:flex justify-between items-center hidden "

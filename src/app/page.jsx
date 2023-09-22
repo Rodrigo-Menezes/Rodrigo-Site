@@ -22,12 +22,12 @@ const image = {
 
 export default function Home() {
   return (
-    <div className="flex justify-center items-center w-full md:p- md:pt-10 h-screen">
+    <div className="flex justify-center items-center w-full md:p- md:pt-10 h-[500px] md:h-screen">
       
       <div className="flex flex-col justify-center items-center">
         <AnimatedImage className="drop-shadow-dark absolute" />
         <AnimatedText text="Sou um desenvolvedor apaixonado que cria experiências incríveis tanto no frontend quanto no backend, transformando ideias em realidade digital."
-        className="text-sm w-96"
+        className="text-xs w-96"
         />
         <motion.a
           href="https://wa.me/5535988253492"
