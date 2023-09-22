@@ -63,7 +63,7 @@ export default function Projetos() {
             </p>
 
             <motion.a
-              href="https://construcao-hazel.vercel.app/"
+              href="https://construction-bay.vercel.app/"
               target="_blank"
               variants={image}
               initial="initial"
@@ -87,7 +87,7 @@ export default function Projetos() {
             </p>
 
             <motion.a
-              href="https://construcao-hazel.vercel.app/"
+              href="https://site-sage-chi.vercel.app/"
               target="_blank"
               variants={image}
               initial="initial"
