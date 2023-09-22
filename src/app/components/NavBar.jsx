@@ -120,12 +120,13 @@ export default function NavBar() {
             }`}
           ></span>
         </button>
+        <a href="/">
+          <div className="md:hidden block">
+            <h1 className="text-light font-bold text-xl">RM</h1>
 
-        <div className="md:hidden block">
-          <h1 className="text-light font-bold text-xl">RM</h1>
-
-          <h2 className="text-primary text-xl font-bold">Dev</h2>
-        </div>
+            <h2 className="text-primary text-xl font-bold">Dev</h2>
+          </div>
+        </a>
       </div>
       {isOpen ? (
         <div className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-light/10 rounded-lg backdrop-blur-md py-32">
