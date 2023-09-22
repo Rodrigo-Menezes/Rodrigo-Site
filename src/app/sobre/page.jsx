@@ -28,11 +28,11 @@ export default function Sobre() {
       <TransitionEffect />
       
       <div className="flex flex-col md:flex-row items-start">
-      <div className="flex justify-center items-center md:w-1/2 mb-5">
+      <div className="flex justify-center items-center w-full md:w-1/2 mb-5">
           <Image
             src={rodrigo}
             alt="Minha foto de perfil"
-            className=" rounded-xl shadow-lg shadow-black h-[550px] w-auto"
+            className=" rounded-xl shadow-lg shadow-black h-72 md:h-[550px] w-auto"
             sizes="(max-width:768px) 100vw,(max-width:1200px)50vw,50vw"
           />
         </div>

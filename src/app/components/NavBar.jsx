@@ -3,8 +3,12 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faGithub,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const pathname = usePathname();
@@ -13,8 +17,9 @@ const CustomLink = ({ href, title, className = "" }) => {
     <Link href={href} className={`${className} group relative text-light`}>
       {title}
       <span
-        className={`h-px inline-block bg-primary absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${pathname === href ? "w-full" : "w-0"
-          }`}
+        className={`h-px inline-block bg-primary absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
+          pathname === href ? "w-full" : "w-0"
+        }`}
       >
         &nbsp;
       </span>
@@ -37,8 +42,9 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
     >
       {title}
       <span
-        className={`h-px inline-block bg-primary absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${pathname === href ? "w-full" : "w-0"
-          }`}
+        className={`h-px inline-block bg-primary absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
+          pathname === href ? "w-full" : "w-0"
+        }`}
       >
         &nbsp;
       </span>
@@ -55,13 +61,13 @@ export default function NavBar() {
 
   return (
     <header className="relative">
-
       {/* menu web */}
       <motion.div
         initial={{ opacity: 0, y: 110 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1 }}
-        className="w-full px-10 pt-5 font-medium flex items-center justify-between absolute">
+        className="w-full px-10 pt-5 font-medium flex items-center justify-between absolute"
+      >
         <Link
           href="/"
           className="w-full md:flex justify-between items-center hidden "
@@ -72,32 +78,46 @@ export default function NavBar() {
             <h2 className="text-primary text-3xl font-bold">Dev</h2>
           </div>
           <nav>
-            <CustomLink href="/" title="Início" className="mr-4 p-2 drop-shadow-dark text-xl" />
-            <CustomLink href="/sobre" title="Sobre" className="mx-4 p-2 drop-shadow-dark text-xl" />
-            <CustomLink href="/projetos" title="Projetos" className="mx-4 p-2 drop-shadow-dark text-xl" />
+            <CustomLink
+              href="/"
+              title="Início"
+              className="mr-4 p-2 drop-shadow-dark text-xl"
+            />
+            <CustomLink
+              href="/sobre"
+              title="Sobre"
+              className="mx-4 p-2 drop-shadow-dark text-xl"
+            />
+            <CustomLink
+              href="/projetos"
+              title="Projetos"
+              className="mx-4 p-2 drop-shadow-dark text-xl"
+            />
           </nav>
         </Link>
       </motion.div>
 
       {/* menu mobile */}
       <div className="flex justify-between items-center px-10 py-5 mt-10">
-
         <button
           className="flex-col justify-center items-center flex  md:hidden"
           aria-label="botão de menu"
           onClick={handleClick}
         >
           <span
-            className={`bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
-              }`}
+            className={`bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
+              isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
+            }`}
           ></span>
           <span
-            className={`bg-primary block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? "opacity-0" : "opacity-100"
-              }`}
+            className={`bg-primary block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
+              isOpen ? "opacity-0" : "opacity-100"
+            }`}
           ></span>
           <span
-            className={`bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
-              }`}
+            className={`bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
+              isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
+            }`}
           ></span>
         </button>
 
@@ -106,7 +126,6 @@ export default function NavBar() {
 
           <h2 className="text-primary text-xl font-bold">Dev</h2>
         </div>
-
       </div>
       {isOpen ? (
         <div className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-light/10 rounded-lg backdrop-blur-md py-32">
@@ -130,10 +149,19 @@ export default function NavBar() {
               toggle={handleClick}
             />
           </nav>
-          <nav className="flex items-center justify-center gap-2">
-            <Link href='#'><FontAwesomeIcon icon={faInstagram} className="text-primary h-7" /></Link>
-            <Link href='#'><FontAwesomeIcon icon={faGithub} className="text-primary h-7" /></Link>
-            <Link href='#'><FontAwesomeIcon icon={faLinkedin} className="text-primary h-7" /></Link>
+          <nav className="flex items-center justify-center gap-5">
+            <Link
+              href="https://www.instagram.com/rodrigo_menezes91/"
+              target="_blank"
+            >
+              <FontAwesomeIcon
+                icon={faInstagram}
+                className="text-primary h-7"
+              />
+            </Link>
+            <Link href="https://github.com/Rodrigo-Menezes" target="_blank">
+              <FontAwesomeIcon icon={faGithub} className="text-primary h-7" />
+            </Link>
           </nav>
         </div>
       ) : null}

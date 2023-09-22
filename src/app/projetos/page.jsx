@@ -30,7 +30,7 @@ export default function Projetos() {
       </div>
 
       <div className="md:hidden"> 
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center py-16">
           <Image src={cafedavinci} className="w-auto h-44 rounded" />
           <div className=" rounded flex flex-col justify-center items-center     w-full">
             <p className="text-center text-white font-bold text-base p-5 drop-shadow-dark">
@@ -55,7 +55,7 @@ export default function Projetos() {
             </motion.a>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center my-10">
+        <div className="flex flex-col justify-center items-center py-16">
           <Image src={marcioartesanatos} className="w-auto h-44 rounded" />
           <div className=" rounded flex flex-col justify-center items-center     w-full">
             <p className="text-center text-white font-bold text-base p-5 drop-shadow-dark">
@@ -79,7 +79,7 @@ export default function Projetos() {
             </motion.a>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center pb-10">
+        <div className="flex flex-col justify-center items-center py-16">
           <Image src={lavanderiamundial} className="w-auto h-44 rounded" />
           <div className=" rounded flex flex-col justify-center items-center     w-full">
             <p className="text-center text-white font-bold text-base p-5 drop-shadow-dark">
