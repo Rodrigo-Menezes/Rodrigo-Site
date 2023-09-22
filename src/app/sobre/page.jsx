@@ -24,15 +24,23 @@ const image = {
 
 export default function Sobre() {
   return (
-    <div className="px-20 h-full pb-10 pt-44">
+    <div className="px-5 md:px-20 h-full pb-10 md:pt-44">
       <TransitionEffect />
-      <div className="flex items-start">
-        <Layout className="text-light !w-1/2 bg-light/5 shadow-lg shadow-black rounded !p-4 mr-5">
+      
+      <div className="flex flex-col md:flex-row items-start">
+      <div className="flex justify-center items-center md:w-1/2 mb-5">
+          <Image
+            src={rodrigo}
+            alt="Minha foto de perfil"
+            className=" rounded-xl shadow-lg shadow-black h-[550px] w-auto"
+            sizes="(max-width:768px) 100vw,(max-width:1200px)50vw,50vw"
+          />
+        </div>
+        <Layout className="text-light md:!w-1/2 bg-light/5 shadow-lg shadow-black rounded !p-4 mr-5">
           <h2 className="mb-4 text-lg font-bold uppercase text-light drop-shadow-dark ">
             Biografia
           </h2>
-          <p className="font-medium text-light drop-shadow-dark">
-            {" "}
+         
             <p class="text-lg mb-4">
               Olá! Sou Rodrigo Menezes, um entusiasta de tecnologia com 32 anos
               de idade, nascido em São Lourenço, MG. Tenho formação em Sistemas
@@ -60,7 +68,7 @@ export default function Sobre() {
               desenvolvimento web, sinta-se à vontade para entrar em contato.
               Vamos criar algo incrível juntos!
             </p>
-          </p>
+
           <br />
           <div className="flex flex-col justify-center items-center">
         <motion.a
@@ -80,14 +88,7 @@ export default function Sobre() {
         </motion.a>
       </div>
         </Layout>
-        <div className="flex justify-center items-center w-1/2">
-          <Image
-            src={rodrigo}
-            alt="Minha foto de perfil"
-            className=" rounded-full shadow-lg shadow-black h-[550px] w-auto"
-            sizes="(max-width:768px) 100vw,(max-width:1200px)50vw,50vw"
-          />
-        </div>
+       
       </div>
       <Tecnologias />
     </div>

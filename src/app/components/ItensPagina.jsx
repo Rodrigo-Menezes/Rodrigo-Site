@@ -11,8 +11,8 @@ import Link from "next/link";
 export default function ItensPagina() {
   return (
     <div className="hidden md:block">
-      <div className="flex flex-col justify-center items-center fixed w-9 right-10 bottom-10 z-10 gap-5">
-        <div className="w-px h-44 bg-primary fixed right-8 bottom-20" />
+      <div className="flex flex-col justify-center items-center fixed w-9 left-10 bottom-10 z-10 gap-5">
+        <div className="w-px h-20 bg-primary fixed left-8 bottom-20" />
         <motion.a
           href="/"
           target={"_blank"}

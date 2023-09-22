@@ -27,7 +27,7 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center">
         <AnimatedImage className="drop-shadow-dark absolute" />
         <AnimatedText text="Sou um desenvolvedor apaixonado que cria experiências incríveis tanto no frontend quanto no backend, transformando ideias em realidade digital."
-        className="text-xs w-96"
+        className="text-xs md:text-sm md:!w-[700px] px-5 md:px-0 mt-10"
         />
         <motion.a
           href="https://wa.me/5535988253492"

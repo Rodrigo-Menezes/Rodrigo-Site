@@ -28,10 +28,10 @@ const Card = ({ text, title, className }) => {
 export default function Tecnologias() {
   return (
     <div className="pt-28">
-      <AnimatedText text="Tecnologias que utilizo" className="w-full" />
-      <div className="flex space-x-5 ">
-        <div className="w-1/2">
-          <AnimatedText text="Fronend" className="w-full text-4xl mt-10" />
+      <AnimatedText text="Tecnologias que utilizo" className="w-full text-2xl md:text-8xl" />
+      <div className="flex flex-col md:flex-row md:space-x-5 ">
+        <div className="md:w-1/2">
+          <AnimatedText text="Fronend" className="w-full mt-10 text-2xl md:text-4xl" />
           <Card
             title="HTML"
             text="  HTML é uma linguagem usada para criar páginas na internet. Ela usa tags para organizar e estruturar o conteúdo da página, como parágrafos, imagens e links. Com HTML, você pode criar textos, imagens e links na web para que todos possam ver. É a base de qualquer site que você visita!"
@@ -63,9 +63,9 @@ Basicamente, o JavaScript permite que você torne seu site mais do que apenas um
             text="Next.js é um framework JavaScript para criar aplicativos web rápidos e eficientes com React. Ele oferece recursos como renderização no servidor, roteamento automático e suporte a TypeScript, tornando o desenvolvimento mais simples e rápido. É uma ótima escolha para projetos modernos e com bom desempenho."
           />
         </div>
-        <div className="w-1/2">
+        <div className="md:w-1/2">
           
-          <AnimatedText text="Backend" className="w-full text-4xl mt-10" />
+          <AnimatedText text="Backend" className="w-full mt-10 text-2xl md:text-4xl" />
           <Card
             title="Go"
             text="Go, também conhecida como Golang, é uma linguagem de programação de código aberto desenvolvida pelo Google. Ela é conhecida por sua eficiência, simplicidade e desempenho, sendo frequentemente usada para criar software de sistemas e aplicativos de alto desempenho, especialmente em ambientes de servidores e computação distribuída. Go é projetada para ser rápida na compilação e execução, com suporte embutido para concorrência e gerenciamento de memória, tornando-a uma escolha popular para desenvolvedores que buscam eficiência e facilidade de uso."
