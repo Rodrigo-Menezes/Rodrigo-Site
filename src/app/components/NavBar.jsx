@@ -55,6 +55,7 @@ export default function NavBar() {
 
   return (
     <header className="relative">
+
       {/* menu web */}
       <motion.div
         initial={{ opacity: 0, y: 110 }}
@@ -79,7 +80,7 @@ export default function NavBar() {
       </motion.div>
 
       {/* menu mobile */}
-      <div className="flex justify-between items-center px-10 py-5">
+      <div className="flex justify-between items-center px-10 py-5 mt-10">
 
         <button
           className="flex-col justify-center items-center flex  md:hidden"
