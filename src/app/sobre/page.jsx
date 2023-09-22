@@ -1,10 +1,26 @@
+"use client"
 import Image from "next/image";
-import logo from '../../../public/logo.png';
-import h from '../../../public/h.jpg';
+import rodrigo from "../../../public/rodrigo.jpg";
 import Layout from "../components/Layoyt";
 import Tecnologias from "../components/Tecnologias";
 import TransitionEffect from "../components/TransitionEffect";
+import AnimatedImage from "../components/AnimatedImage";
+import { motion } from "framer-motion";
 
+const image = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+    },
+    delay: 2,
+  },
+};
 
 export default function Sobre() {
   return (
@@ -12,38 +28,68 @@ export default function Sobre() {
       <TransitionEffect />
       <div className="flex items-start">
         <Layout className="text-light !w-1/2 bg-light/5 shadow-lg shadow-black rounded !p-4 mr-5">
-          <h2 className="mb-4 text-lg font-bold uppercase text-light drop-shadow-dark ">Biografia</h2>
-          <p className="font-medium text-light drop-shadow-dark"> Meu nome é <samp className="font-black text-primary">Rodrigo Menezes</samp> e sou natural de São Lourenço, Minas Gerais. Desde cedo, minha paixão por tecnologia me impulsionou a seguir uma carreira no mundo do desenvolvimento. Como desenvolvedor frontend, sou especializado em ReactJS e NextJS, duas tecnologias que me encantam pelas possibilidades que oferecem.</p><br />
-
-          <p className="font-medium text-light drop-shadow-dark"><span className="text-primary font-bold"> Formado em Sistemas de Informação,</span> tenho uma base sólida de conhecimento que complementa minha experiência prática. A cada dia, sinto um entusiasmo renovado ao criar interfaces inovadoras e interativas, buscando sempre proporcionar a melhor experiência ao usuário. Acompanhar as tendências do setor é uma parte fundamental da minha jornada, pois acredito que o aprendizado constante é a chave para o sucesso.</p><br />
-
-          <p className="font-medium text-light drop-shadow-dark">O desafio é o que me motiva a crescer profissionalmente, e estou sempre em busca de novos projetos para aprimorar minhas habilidades. O mundo da programação é vasto e em constante evolução, e essa dinâmica me inspira a explorar diferentes possibilidades e soluções criativas.</p><br />
-
-          <p className="font-medium text-light drop-shadow-dark">Ser um desenvolvedor frontend me permite unir minha paixão pela tecnologia com a criatividade, e é algo que me faz sentir realizado. Estou animado para continuar trilhando meu caminho nessa área e contribuir para o desenvolvimento de projetos que tenham um impacto positivo na vida das pessoas.</p><br />
+          <h2 className="mb-4 text-lg font-bold uppercase text-light drop-shadow-dark ">
+            Biografia
+          </h2>
+          <p className="font-medium text-light drop-shadow-dark">
+            {" "}
+            <p class="text-lg mb-4">
+              Olá! Sou Rodrigo Menezes, um entusiasta de tecnologia com 32 anos
+              de idade, nascido em São Lourenço, MG. Tenho formação em Sistemas
+              de Informação e sou apaixonado por criar experiências digitais
+              incríveis como desenvolvedor Frontend especializado em React e
+              Next.js.
+            </p>
+            <p class="text-lg mb-4">
+              Atualmente, faço parte da equipe de desenvolvimento da Rixxer,
+              onde tenho a oportunidade de contribuir para projetos emocionantes
+              e desafiadores. Meu foco é aprimorar a interface do usuário e
+              garantir que nossos produtos ofereçam a melhor experiência
+              possível aos usuários.
+            </p>
+            <p class="text-lg mb-4">
+              Além disso, estou sempre buscando aprimorar minhas habilidades e
+              expandir meu conhecimento. No momento, estou dedicando meu tempo
+              ao estudo da linguagem Go (Golang) como parte do meu objetivo de
+              me tornar um desenvolvedor Backend mais completo.
+            </p>
+            <p class="text-lg">
+              Estou animado com o que o futuro reserva e ansioso para continuar
+              aprendendo e crescendo no mundo da tecnologia. Se você quiser
+              saber mais sobre meu trabalho ou apenas bater um papo sobre
+              desenvolvimento web, sinta-se à vontade para entrar em contato.
+              Vamos criar algo incrível juntos!
+            </p>
+          </p>
+          <br />
+          <div className="flex flex-col justify-center items-center">
+        <motion.a
+          href="https://wa.me/5535988253492"
+          target="_blank"
+          variants={image}
+          initial="initial"
+          animate="animate"
+          class="relative px-6 py-2 group mt-20 md:mt-10 md:mb-10 text-cente border"
+        >
+          <span class="absolute inset-0 w-full h-full transition duration-300 ease-out transform translate-x-1 translate-y-1 bg-primary group-hover:-translate-x-0 group-hover:-translate-y-0 border"></span>
+          <span class="absolute inset-0 w-full h-full bg-light border-2 border-primary group-hover:bg-primary"></span>
+          <span class="relative text-black group-hover:text-white font-bold">
+            {" "}
+            Entre em contato
+          </span>
+        </motion.a>
+      </div>
         </Layout>
-        <div className="w-1/2 flex justify-center items-center h-[450px] mt-36">
-          <div className="w-44 h-44 flex justify-center items-center  rotate-45 gap-1 bg-primary rounded-full drop-shadow-dark1">
-            <div className="space-y-1 flex flex-col justify-center items-end -ml-10 -mt-10">
-              <div className="bg-dark flex justify-center items-center w-56 h-56   rounded">
-                <Image src={h} alt="Minha foto de perfil" className="w-96 h-56 rounded border-4 border-solid border-dark"
-                sizes="(max-width:768px) 100vw,(max-width:1200px)50vw,50vw" />
-              </div>
-              <div className="bg-dark flex justify-center items-center w-44 h-44 rounded p-5  ">
-                <Image src={logo} alt="Minha foto de perfil" className="-rotate-45" />
-              </div>
-            </div>
-            <div className="space-y-1 flex flex-col justify-center items-end mt-2">
-              <div className="bg-dark flex justify-center items-center w-44 h-44 rounded p-5 ">
-                <Image src={logo} alt="Minha foto de perfil" className="-rotate-45" />
-              </div>
-              <div className="bg-dark flex justify-center items-center w-44 h-44 rounded p-5 ">
-                <Image src={logo} alt="Minha foto de perfil" className="-rotate-45" />
-              </div>
-            </div>
-          </div>
+        <div className="flex justify-center items-center w-1/2">
+          <Image
+            src={rodrigo}
+            alt="Minha foto de perfil"
+            className=" rounded-full shadow-lg shadow-black h-[550px] w-auto"
+            sizes="(max-width:768px) 100vw,(max-width:1200px)50vw,50vw"
+          />
         </div>
       </div>
       <Tecnologias />
     </div>
-  )
+  );
 }

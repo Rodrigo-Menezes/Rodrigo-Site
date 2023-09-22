@@ -19,33 +19,20 @@ export default function ItensPagina() {
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <Link href="#">
+          <Link href="https://github.com/Rodrigo-Menezes" target="_blank">
             <FontAwesomeIcon
               icon={faGithub}
               className="text-light hover:text-primary h-7"
             />
           </Link>
-        </motion.a>
+          </motion.a>
         <motion.a
-          href="/"
+          href="https://www.instagram.com/rodrigo_menezes91/"
           target={"_blank"}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <Link href="#">
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              className="text-light hover:text-primary h-7"
-            />
-          </Link>
-        </motion.a>
-        <motion.a
-          href="/"
-          target={"_blank"}
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <Link href="#">
+          <Link href="https://www.instagram.com/rodrigo_menezes91/" target="_blank">
             <FontAwesomeIcon
               icon={faInstagram}
               className="text-light hover:text-primary h-7"

@@ -2,10 +2,9 @@
 
 import AnimatedImage from "./components/AnimatedImage";
 import { motion } from "framer-motion";
-import TransitionEffect from "../app/components/TransitionEffect";
 import AnimatedText from "./components/AnimatedText";
-import Image from "next/image";
-import cara from "../../public/h.jpg"
+
+
 const image = {
   initial: {
     opacity: 0,
@@ -27,30 +26,24 @@ export default function Home() {
       
       <div className="flex flex-col justify-center items-center">
         <AnimatedImage className="drop-shadow-dark absolute" />
-
-        <AnimatedText className="text-white text-center font-bold text-xl md:text-sm md:my-10"
-          text="Maximize suas vendas com nossa landing page de alta conversão.
-        Destaque-se e conquiste clientes agora!"
+        <AnimatedText text="Sou um desenvolvedor apaixonado que cria experiências incríveis tanto no frontend quanto no backend, transformando ideias em realidade digital."
+        className="text-sm w-96"
         />
-
         <motion.a
-          href="#"
+          href="https://wa.me/5535988253492"
+          target="_blank"
           variants={image}
           initial="initial"
           animate="animate"
-          class="relative px-6 py-2 group mt-20 md:mt-10 md:mb-10 text-center"
+          class="relative px-6 py-2 group mt-20 md:mt-10 md:mb-10 text-center border hover:border-primary "
         >
-          <span class="absolute inset-0 w-full h-full transition duration-300 ease-out transform translate-x-1 translate-y-1 bg-primary group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+          <span class="absolute inset-0 w-full h-full transition duration-300 ease-out transform translate-x-1 translate-y-1 bg-primary group-hover:-translate-x-0 group-hover:-translate-y-0 border"></span>
           <span class="absolute inset-0 w-full h-full bg-light border-2 border-primary group-hover:bg-primary"></span>
           <span class="relative text-black group-hover:text-white font-bold">
             {" "}
             Entre em contato
           </span>
         </motion.a>
-      </div>
-      <div className=" w-1/2 h-screen -mt-10 ">
-        <Image src={cara} alt="Foto de perfil de Rodrigo Menezes" className="opacity-70 absolute -z-10 right-0 w-1/2 h-screen drop-shadow-dark2"
-        sizes="(max-width:768px) 100vw,(max-width:1200px)50vw,50vw"/>
       </div>
     </div>
   );
