@@ -3,5 +3,20 @@
 @tailwind utilities;
 
 
+/* :: Custom Scrollbar :: */
+::-webkit-scrollbar {
+    width: 5px;
+}
 
+::-webkit-scrollbar-track {
+    background: #1C1C23
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff0048;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #DDDDDD;
+}
 
