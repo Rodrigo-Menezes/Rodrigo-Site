@@ -28,7 +28,7 @@ const Card = ({ text, title, className }) => {
 export default function Tecnologias() {
   return (
     <div className="pt-28">
-      <AnimatedText text="Tecnologias que utilizo" className="w-full text-2xl md:text-8xl" />
+      <AnimatedText text="Tecnologias que utilizo" className="w-full !text-3xl md:text-8xl" />
       <div className="flex flex-col md:flex-row md:space-x-5 ">
         <div className="md:w-1/2">
           <AnimatedText text="Fronend" className="w-full mt-10 !text-2xl md:text-4xl" />
